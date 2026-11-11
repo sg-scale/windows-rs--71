@@ -51,7 +51,7 @@ jobs:
 
       - name: LLVM MinGW toolchain cache configuration
         id: cache-llvm-mingw-toolchain
-        uses: actions/cache@v4
+        uses: actions/cache@v6
         if: contains(matrix.target, 'gnullvm')
         with:
           path: ${{ env.LLVM-MINGW-TOOLCHAIN-NAME }}
